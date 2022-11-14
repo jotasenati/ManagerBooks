@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {}
+    "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {
+    "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
+        "projectUniqueName": "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
         "projectName": "BooksAPI",
-        "projectPath": "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
-        "packagesPath": "C:\\Users\\Discover\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\obj\\",
+        "projectPath": "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
+        "packagesPath": "C:\\Users\\araru\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Discover\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\araru\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -78,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
