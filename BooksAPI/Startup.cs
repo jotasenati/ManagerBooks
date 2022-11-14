@@ -1,5 +1,6 @@
 using BooksAPI.Model;
-using BooksAPI.Repositories;
+using BooksAPI.Repositories.BookRepository;
+using BooksAPI.Repositories.CostumerRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,7 @@ namespace BooksAPI
         {
             services.AddDbContext<BookContext>(x => x.UseSqlite("Data source=books.db"));
             services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICostumerRepository, CostumerRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

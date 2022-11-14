@@ -14,5 +14,7 @@ namespace BooksAPI.Model
         }
 
         public DbSet<Book> Books { get; set; }
+        public DbSet<Costumer> Costumers { get; set; }
+        public DbSet<SalesBook> SalesBooks { get; set; }
     }
 }

@@ -1,5 +1,5 @@
 ﻿using BooksAPI.Model;
-using BooksAPI.Repositories;
+using BooksAPI.Repositories.BookRepository;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;

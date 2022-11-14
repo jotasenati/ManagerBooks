@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BooksAPI.Repositories
+namespace BooksAPI.Repositories.BookRepository
 {
     public class BookRepository : IBookRepository
     {
@@ -18,7 +18,7 @@ namespace BooksAPI.Repositories
         public async Task<Book> Create(Book book)
         {
             _context.Books.Add(book);
-           await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return book;
         }
@@ -32,7 +32,7 @@ namespace BooksAPI.Repositories
 
         public async Task<IEnumerable<Book>> Get()
         {
-          return await  _context.Books.ToListAsync();
+            return await _context.Books.ToListAsync();
         }
 
         public async Task<Book> Get(int id)
