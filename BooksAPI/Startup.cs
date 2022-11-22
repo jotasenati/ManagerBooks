@@ -1,7 +1,9 @@
 using BooksAPI.Model;
 using BooksAPI.Repositories.BookRepository;
 using BooksAPI.Repositories.CostumerRepository;
+using BooksAPI.Repositories.SalesBooksRepository;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -33,7 +35,17 @@ namespace BooksAPI
             services.AddDbContext<BookContext>(x => x.UseSqlite("Data source=books.db"));
             services.AddScoped<IBookRepository, BookRepository>();
             services.AddScoped<ICostumerRepository, CostumerRepository>();
+            services.AddScoped<ISalesBooksRepository, SalesBooksRepository>();
             services.AddControllers();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder
+                   .AllowAnyMethod()
+                   .AllowAnyHeader()
+                   .SetIsOriginAllowed((host) => true)
+                   .AllowCredentials());
+            });
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BooksAPI", Version = "v1" });
@@ -51,6 +63,8 @@ namespace BooksAPI
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("CorsPolicy");
 
             app.UseRouting();
 

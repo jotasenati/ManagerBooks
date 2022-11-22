@@ -56,7 +56,7 @@ namespace BooksAPI.Controllers
 
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> PutCostumers(int id, [FromBody] Costumer costumer)
         {
             if (id != costumer.Id)

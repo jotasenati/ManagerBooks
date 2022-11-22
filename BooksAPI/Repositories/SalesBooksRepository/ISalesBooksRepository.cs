@@ -1,4 +1,5 @@
-﻿using BooksAPI.Model;
+﻿using BooksAPI.Dto;
+using BooksAPI.Model;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -6,7 +7,7 @@ namespace BooksAPI.Repositories.SalesBooksRepository
 {
     public interface ISalesBooksRepository
     {
-        Task<IEnumerable<SalesBook>> Get();
+        Task<List<SalesBookDto>> Get();
 
         Task<SalesBook> Get(int Id);
 

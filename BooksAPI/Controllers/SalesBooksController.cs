@@ -47,19 +47,14 @@ namespace BooksAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<ActionResult> Delete(int id)
         {
-            var salesBooksToDelete = await _salesBooksRepository.Get(id);
+            if (id == null || id == 0)
+                return BadRequest();
 
-            // se o livro selecionado não tiver o que ser deletado = nulo)))))))))))tirar duvid
-            if (salesBooksToDelete == null)
-                return NotFound();
-
-            await _salesBooksRepository.Delete(salesBooksToDelete.Id);
-            return NoContent();
-
-
+            await _salesBooksRepository.Delete(id);
+            return Ok();
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> PutSalesBooks(int id, [FromBody] SalesBook salesBook)
         {
             if (id != salesBook.Id)

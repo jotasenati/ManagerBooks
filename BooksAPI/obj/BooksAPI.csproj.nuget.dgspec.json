@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {}
+    "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {
+    "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
         "projectName": "BooksAPI",
-        "projectPath": "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
-        "packagesPath": "C:\\Users\\araru\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\araru\\OneDrive\\Área de Trabalho\\EstoqueLivros\\ManagerBooks\\BooksAPI\\obj\\",
+        "projectPath": "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\BooksAPI.csproj",
+        "packagesPath": "C:\\Users\\Discover\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Discover\\Desktop\\ManagerBooks\\BooksAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\araru\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Discover\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,6 +57,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.116, )"
             }
           },
           "imports": [
@@ -65,7 +69,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

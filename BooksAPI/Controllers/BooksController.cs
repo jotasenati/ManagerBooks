@@ -31,11 +31,11 @@ namespace BooksAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<Book>> PostBooks([FromBody] Book book)
         {
-            var newBook = await  _bookRepository.Create(book);
+            var newBook = await _bookRepository.Create(book);
             return CreatedAtAction(nameof(GetBooks), new { id = newBook.Id }, newBook);
         }
 
-        [HttpDelete("{id}")] 
+        [HttpDelete("{id}")]
 
         public async Task<ActionResult> Delete(int id)
         {
@@ -50,7 +50,7 @@ namespace BooksAPI.Controllers
 
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> PutBooks(int id,[FromBody] Book book)
         {
             if (id != book.Id)
